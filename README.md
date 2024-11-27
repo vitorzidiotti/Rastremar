@@ -71,19 +71,78 @@ Este projeto foi desenvolvido com o intuito de criar uma página web funcional e
 
 ---
 
+# Comando para o Projeto Final: Dev Solidário
+
+## Objetivo
+
+Desenvolver uma página web estática para um micro ou pequeno negócio que ainda não possua (ou possua pouca) presença online. Este projeto tem como objetivo ajudar esses empreendimentos a ganharem visibilidade e atrair novos clientes através da internet.
+
+**Valor**: 7,0 Pontos
+
+## Descrição do Projeto
+
+Os alunos deverão formar grupos de 3 integrantes e escolher um micro ou pequeno negócio local que ainda não possua uma página web. A partir disso, deverão criar uma página web estática que atenda às necessidades do negócio escolhido.
+
 ## Requisitos do Projeto
 
-- **Planejamento e Pesquisa**: Identificação de um pequeno negócio e coleta de informações com o proprietário.
-- **Design e Estrutura**: Desenvolvimento de layout responsivo utilizando Figma e implementação com HTML, CSS e JavaScript.
-- **Conteúdo**: Elaboração de conteúdo textual relevante e de qualidade para o negócio.
-- **Entrega e Apresentação**: O código fonte foi entregue no GitHub, incluindo imagens e design, além de uma apresentação explicando o processo de desenvolvimento.
+### 1. Planejamento e Pesquisa:
 
-## Créditos
+- Identificar um micro ou pequeno negócio que não tenha página web.
+- Realizar uma entrevista com o proprietário para entender as necessidades e os objetivos do negócio.
+- Coletar informações e materiais (logotipo, fotos, descrições de produtos/serviços, contatos, etc.).
 
-- **Design**: Figma
-- **Desenvolvimento**: HTML, CSS, JavaScript
-- **Imagens**: Fotos fornecidas pela empresa Rastremar
+### 2. Design e Estrutura da Página:
 
-## Licença
+- Definir a estrutura da página (home, sobre, produtos/serviços, contato, etc.).
+- Criar um layout no Figma que seja atrativo e responsivo, que funcione bem em dispositivos móveis e desktops.
+- Utilizar HTML5, CSS3 e Javascript para a construção da página.
+- Aderir às melhores práticas de usabilidade e acessibilidade.
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+### 3. Conteúdo:
+
+- Desenvolver o conteúdo textual com base nas informações coletadas do negócio.
+- Utilizar imagens e gráficos de alta qualidade.
+- Garantir que o conteúdo esteja bem organizado e fácil de navegar.
+
+### 4. Entrega e Apresentação:
+
+- Entregar o código fonte da página web (HTML, CSS e JS), quaisquer mídias (vídeos, fotos ou qualquer evidência de que o projeto foi executado) e o link do Figma produzidos durante o projeto em um repositório no GitHub.
+- Apresentar o projeto à turma, explicando o processo de desenvolvimento, as escolhas de design e como a página atende às necessidades do negócio.
+
+## Critérios de Avaliação
+
+### 1. Planejamento e Pesquisa (1,5 pontos):
+
+- Qualidade da pesquisa e do entendimento das necessidades do negócio.
+- Clareza e organização na apresentação das informações coletadas.
+
+### 2. Design e Estrutura (2,0 pontos):
+
+- Estética do design (atraente e profissional).
+- Responsividade e compatibilidade com diferentes dispositivos.
+- Uso eficaz de HTML5 e CSS3.
+
+### 3. Conteúdo (2,0 pontos):
+
+- Relevância e clareza do conteúdo textual.
+- Qualidade das imagens e outros elementos visuais.
+- Organização e navegabilidade da página.
+
+### 4. Entrega e Apresentação (1,5 pontos):
+
+- Funcionamento correto do código.
+- Clareza e eficácia na apresentação do projeto.
+- Demonstração de trabalho em equipe e colaboração.
+
+## Datas Importantes
+
+- **Data de Entrega**: 29/11/24
+- **Data da Apresentação**: A partir do dia 27/11/24 (combinar com o professor)
+
+## Observações
+
+- Grupos que optarem por trabalhar com mais de um negócio podem ganhar até 0,5 pontos extras.
+- É altamente recomendado utilizar boas práticas de codificação e comentar o código de forma adequada.
+- Qualquer plágio ou uso de templates prontos sem a devida adaptação será penalizado.
+
+Este projeto visa não só aplicar os conhecimentos técnicos adquiridos na disciplina, mas também incentivar a responsabilidade social e o empreendedorismo. Boa sorte a todos!
