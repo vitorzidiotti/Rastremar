@@ -41,8 +41,14 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ### Estrutura de Pastas:
 
-/project ├── index.html # Arquivo principal da página ├── styles.css # Estilos CSS da página ├── script.js # Arquivo JS para interatividade ├── /images # Pasta contendo as imagens usadas na página └── README.md # Este arquivo
-
+```bash
+/project 
+├── index.html        # Arquivo principal da página 
+├── styles.css        # Estilos CSS da página 
+├── script.js         # Arquivo JS para interatividade 
+├── /images           # Pasta contendo as imagens usadas na página 
+└── README.md         # Este arquivo
+```
 
 ## Como Rodar o Projeto
 
@@ -146,3 +152,7 @@ Os alunos deverão formar grupos de 3 integrantes e escolher um micro ou pequeno
 - Qualquer plágio ou uso de templates prontos sem a devida adaptação será penalizado.
 
 Este projeto visa não só aplicar os conhecimentos técnicos adquiridos na disciplina, mas também incentivar a responsabilidade social e o empreendedorismo. Boa sorte a todos!
+
+
+   - [Link do Site Online](https://rastremar.vercel.app/) 
+   - [Link do Figma](https://www.figma.com/design/YC6YMs3DeNzWknFjj5sw9B/rastremar-(Copy)?node-id=0-1&t=16THpH3LgwHoDDr5-1) 
