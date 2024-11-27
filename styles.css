@@ -7,31 +7,26 @@
 
 body, html {
   width: 100%;
-  font-family: "Open Sans", Sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.elementor-section {
-  display: flex;
-  justify-content: center;
-  background-color: #616659;
-  height: 41px;
-}
-
-.elementor-widget-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 500;
+/* Estilo do layout geral */
+.container {
   width: 100%;
-  padding: 0 12px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #333;
 }
 
 /* Navegação */
 nav {
   display: flex;
   justify-content: flex-start;
-  font-family: "Open Sans", Sans-serif;
+  font-family: "Open Sans", sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -50,7 +45,7 @@ nav a {
   display: none;
 }
 
-/* Estilos do header */
+/* Estilos do Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -81,7 +76,7 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-/* Responsividade para dispositivos móveis */
+/* Responsividade */
 @media (max-width: 768px) {
   .desktop-only {
     display: none;
@@ -140,35 +135,13 @@ nav a {
   }
 }
 
-/* Responsividade para tablet (769px a 1207px) */
-@media (min-width: 769px) and (max-width: 1207px) {
-  .header-column {
-    flex: 1;
-    justify-content: space-between;
-  }
-
-  .logo {
-    height: 80px;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    position: static;
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-}
-
-/* Estilos da seção hero */
+/* Estilos da seção Hero */
 .hero-section {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 50px 20%;
+  padding: 50px 0%;
   background-image: url('./images/1.jpg');
   background-size: 100%;
   background-position: center;
@@ -179,7 +152,7 @@ nav a {
 
 .hero-content {
   max-width: 700px;
-  padding: 10px;
+  padding: 10%;
   text-align: center;
 }
 
@@ -321,42 +294,20 @@ nav a {
   }
 }
 
+/* Especialidades */
 .specialties-section {
   padding: 100px 20% 50px;
-  background-color: #60A5FA; /* Azul claro   */
-  text-align: center;
-}
-
-.highlighted-text p {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: #3D3D3D;
-  margin-bottom: 5px;
-}
-
-.specialties-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #60A5FA;
   text-align: center;
 }
 
 .specialties-header h2 {
-  font-family: "Open Sans", Sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 44px;
   font-weight: 700;
   letter-spacing: -2px;
   color: #333;
   margin-bottom: 50px;
-}
-
-.divider {
-  width: 300px;
-  height: 1px;
-  background-color: #333333;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .specialties-cards {
@@ -378,24 +329,24 @@ nav a {
   margin: 10px;
   text-align: center;
   justify-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionado efeito de transição */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .specialty-card:hover {
-  transform: scale(1.05);           /* Aumenta a carta quando o mouse passa */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .specialty-image {
   height: 100px;
   object-fit: contain;
   border-radius: 8px;
-  border: 2px solid #333; /* Borda de 2px de cor #333 */
-  transition: transform 0.3s ease; /* Adicionando transição para a imagem */
+  border: 2px solid #333;
+  transition: transform 0.3s ease;
 }
 
 .specialty-card:hover .specialty-image {
-  transform: scale(1.1);  /* Aumenta a imagem ao passar o mouse */
+  transform: scale(1.1);
 }
 
 .specialty-card h3 {
@@ -406,6 +357,51 @@ nav a {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
+.specialty-description ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 22px;
+}
+
+.specialty-description ul li:before {
+  content: "✔";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: #333;
+  font-size: 14px;
+}
+
+.specialty-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .specialties-section {
+    padding: 50px 5%;
+  }
+
+  .specialties-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .specialty-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .specialty-card h3 {
+    font-size: 26px;
+  }
+}
+
 
 .specialty-description {
   display: flex;
@@ -555,11 +551,20 @@ h3 {
 /* Estilizando o formulário */
 form {
   width: 100%;
-  max-width: 600px;  /* Largura máxima do formulário */
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 form div {
@@ -579,6 +584,18 @@ textarea {
   border-radius: 8px;
   background-color: #fafafa;
   transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo para os inputs e textarea */
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; /* Espaço entre os campos */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
 }
 
 input[type="text"]:focus,
@@ -684,3 +701,4 @@ ul.actions {
 html {
   scroll-behavior: smooth;
 }
+

@@ -11,19 +11,19 @@
 <body>
   <header class="header">
     <div class="header-column logo-column">
-      <img src="./images/logo.png" alt="Logo rastremar" class="logo">
+      <img src="./images/logo.png" alt="Logo da empresa Rastremar" class="logo">
+
     </div>
 
     <div class="header-column nav-column">
       <div class="menu-toggle">☰</div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Menu principal">
         <a href="#moreInfo">Quem Somos</a>
         <a href="#specialties">Especialidades</a>
-        <a target="_blank" href="http://semprecomvoce.rastremar.com.br/sistema/login.aspx"
-          rel="noopener noreferrer">Sempre Rastreamento</a>
-        <a target="_blank" href="http://monitoramento.rastremar.com.br/sistema/login.aspx"
-          rel="noopener noreferrer">Rastremar Rastreamento e
-          Logistica</a>
+        <a href="http://semprecomvoce.rastremar.com.br/sistema/login.aspx" target="_blank" rel="noopener noreferrer"
+          aria-label="Link para o sistema Sempre Rastreamento">Sempre Rastreamento</a>
+        <a href="http://monitoramento.rastremar.com.br/sistema/login.aspx" target="_blank" rel="noopener noreferrer"
+          aria-label="Link para o sistema Rastremar Rastreamento e Logística">Rastremar Rastreamento e Logística</a>
         <a href="#Contato">Contato</a>
       </nav>
     </div>
@@ -39,17 +39,13 @@
   <section id="hero" class="hero-section">
     <div class="hero-content">
       <h1>Rastremar sempre com você !</h1>
-
-      <!-- <button class="contact-button">
-        <a href="https://wa.me/5544991658351" target="_blank" rel="noopener noreferrer">FALE CONOSCO</a>
-      </button> -->
     </div>
   </section>
 
   <!-- Seção Mais Informações -->
   <section id="moreInfo" class="more-info-section">
     <div class="more-info-content">
-      <img src="./images/moreInfo.jpg" alt="Tecnologia de Rastreamento" class="info-image" />
+      <img src="./images/moreInfo.jpg" alt="Imagem mostrando tecnologia de rastreamento" class="info-image" />
       <div class="info-text">
         <h2>Quem Somos</h2>
         <p>
@@ -84,12 +80,6 @@
       </div>
     </div>
   </section>
-
-
-
-
-
-
 
   <section id="specialties" class="specialties-section">
     <div class="highlighted-text">
@@ -165,68 +155,44 @@
     </div>
   </section>
 
-
   <!-- Form -->
   <section id="Contato">
     <h3>Contato</h3>
     <form method="POST" action="#">
-      <div class="">
-        <div class="">
-          <input type="text" name="name" id="name" value="" placeholder="Nome Completo" />
-        </div>
-        <div class="">
-          <input type="email" name="email" id="email" value="" placeholder="E-mail" />
-        </div>
-        <div class="">
-          <select name="category" id="category">
-            <option value="">- Categoria -</option>
-            <option value="Comprar">Comprar</option>
-            <option value="Contato">Contato</option>
-            <option value="Representante">Representante</option>
-          </select>
-        </div>
-        <div class="">
-          <input type="text" name="Telefone" id="Telefone" value="" placeholder="(xx)xxxxx-xxxx" />
-        </div>
+      <label for="name">Nome Completo</label>
+      <input type="text" name="name" id="name" placeholder="Nome Completo" />
 
-        <div class="">
-          <textarea name="message" id="message" placeholder="Digite sua mensagem" rows="6"></textarea>
-        </div>
-        <div class="">
-          <ul class="actions">
-            <li><input type="submit" value="Enviar" class="primary" /></li>
-            <li><input type="reset" value="Reset" /></li>
-          </ul>
-        </div>
-      </div>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="E-mail" />
+
+      <label for="category">Categoria</label>
+      <select name="category" id="category">
+        <option value="">- Categoria -</option>
+        <option value="Comprar">Comprar</option>
+        <option value="Contato">Contato</option>
+        <option value="Representante">Representante</option>
+      </select>
+
+      <label for="Telefone">Telefone</label>
+      <input type="text" name="Telefone" id="Telefone" placeholder="(xx)xxxxx-xxxx" />
+
+      <label for="message">Mensagem</label>
+      <textarea name="message" id="message" placeholder="Digite sua mensagem" rows="6"></textarea>
+
+      <ul class="actions">
+        <li><input type="submit" value="Enviar" class="primary" /></li>
+        <li><input type="reset" value="Reset" /></li>
+      </ul>
     </form>
   </section>
-
-
 
   <footer class="footer">
     <p>&copy; <span id="year"></span> Rastremar. Todos os direitos reservados.</p>
   </footer>
 
 
-
-
-
-
-
-
-
-
   <script src="script.js"></script> <!-- Adicione a referência ao seu script.js aqui -->
 
-  <script>
-    // Lógica básica para o menu toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
 </body>
 
 </html>
