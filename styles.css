@@ -532,3 +532,129 @@ nav a {
   color: black; /* Cor para destacar os títulos dos tópicos */
   font-weight: bold;
 }
+
+
+/* Estilizando a seção */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f3f4f6;  /* Cor de fundo suave */
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estilizando o formulário */
+form {
+  width: 100%;
+  max-width: 600px;  /* Largura máxima do formulário */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+/* Estilizando os campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #60A5FA; /* Azul claro quando focado */
+  box-shadow: 0 0 5px rgba(96, 165, 250, 0.5); /* Sombra azul suave */
+}
+
+/* Estilizando a caixa de seleção (select) */
+select {
+  height: 44px;
+}
+
+/* Estilizando a área de texto (textarea) */
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Estilizando os botões */
+input[type="submit"] {
+  background-color: brown;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  /* width: 48%; */
+  padding: 18px;  /* Aumentando o padding para botões maiores */
+  font-size: 20px;  /* Aumentando ainda mais o tamanho da fonte */
+  font-weight: bold;  /* Negrito para o texto ficar mais visível */
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;  /* Verde mais forte para contraste */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #3b82f6;  /* Verde mais escuro no hover */
+}
+
+/* Estilizando os botões dentro de lista */
+ul.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+ul.actions {
+  list-style: none;  /* Remover o marcador (asterisco) */
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;  /* Botões ocupando 100% da largura em dispositivos menores */
+    margin-bottom: 10px;
+    font-size: 20px;  /* Garantir que o tamanho da fonte seja legível */
+  }
+
+  ul.actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
