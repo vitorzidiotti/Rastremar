@@ -2,22 +2,28 @@
 <html lang="pt-br">
 
 <head>
+  <!-- Definindo o charset como UTF-8 e configurando a visualização responsiva -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link para o arquivo CSS externo -->
   <link rel="stylesheet" href="styles.css">
   <title>PROJETO</title>
 </head>
 
 <body>
+  <!-- Cabeçalho da página -->
   <header class="header">
+    <!-- Coluna da logo -->
     <div class="header-column logo-column">
       <img src="./images/logo.png" alt="Logo da empresa Rastremar" class="logo">
-
     </div>
 
+    <!-- Coluna de navegação com o menu principal -->
     <div class="header-column nav-column">
+      <!-- Botão para toggle do menu (para dispositivos móveis) -->
       <div class="menu-toggle">☰</div>
       <nav class="nav" aria-label="Menu principal">
+        <!-- Links de navegação para as seções da página e sistemas externos -->
         <a href="#moreInfo">Quem Somos</a>
         <a href="#specialties">Especialidades</a>
         <a href="http://semprecomvoce.rastremar.com.br/sistema/login.aspx" target="_blank" rel="noopener noreferrer"
@@ -28,26 +34,30 @@
       </nav>
     </div>
 
+    <!-- Coluna do botão de contato -->
     <div class="header-column button-column">
+      <!-- Link para o WhatsApp -->
       <a href="https://wa.me/5544991658351" target="_blank" class="contact-button-header">
         Fale Conosco
       </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Seção Hero: a principal chamada de atenção da página -->
   <section id="hero" class="hero-section">
     <div class="hero-content">
       <h1>Rastremar sempre com você !</h1>
     </div>
   </section>
 
-  <!-- Seção Mais Informações -->
+  <!-- Seção de Mais Informações: apresenta a empresa -->
   <section id="moreInfo" class="more-info-section">
     <div class="more-info-content">
+      <!-- Imagem ilustrativa sobre a empresa -->
       <img src="./images/moreInfo.jpg" alt="Imagem mostrando tecnologia de rastreamento" class="info-image" />
       <div class="info-text">
         <h2>Quem Somos</h2>
+        <!-- Parágrafos explicando a empresa e seus serviços -->
         <p>
           Somos uma empresa inovadora, dedicada a fornecer as melhores soluções em <strong>rastreamento e monitoramento
             veicular</strong>. Nossa missão é simplificar o gerenciamento de veículos, cargas e equipes através de
@@ -81,6 +91,7 @@
     </div>
   </section>
 
+  <!-- Seção de Especialidades: apresenta os serviços da empresa -->
   <section id="specialties" class="specialties-section">
     <div class="highlighted-text">
       <p>CONHEÇA NOSSAS SOLUÇÕES</p>
@@ -91,24 +102,22 @@
       <div class="divider"></div>
     </div>
 
+    <!-- Cartões que apresentam as especialidades -->
     <div class="specialties-cards">
-      <!-- Rastreador Veicular -->
+      <!-- Cada cartão descreve uma especialidade -->
       <div class="specialty-card">
         <img src="./images/rastreador veicular.jpg" alt="Rastreador Veicular" class="specialty-image" />
         <h3>Rastreador Veicular</h3>
         <div class="specialty-description">
           <ul>
-            <li><strong>Monitoramento em tempo real:</strong> Acompanhe a localização do seu veículo a qualquer momento.
-            </li>
+            <li><strong>Monitoramento em tempo real:</strong> Acompanhe a localização do seu veículo a qualquer momento.</li>
             <li><strong>Redução de custos:</strong> Reduza os custos operacionais em até <strong>15%</strong>.</li>
             <li><strong>Aumento de produtividade:</strong> Melhore a produtividade em até <strong>40%</strong>.</li>
-            <li><strong>Plataforma 100% WEB:</strong> Acesse relatórios detalhados e sem necessidade de aplicativos
-              adicionais.</li>
+            <li><strong>Plataforma 100% WEB:</strong> Acesse relatórios detalhados e sem necessidade de aplicativos adicionais.</li>
           </ul>
         </div>
       </div>
-
-      <!-- Rastreador Pessoal -->
+      <!-- Outros cartões de especialidades seguem o mesmo padrão -->
       <div class="specialty-card">
         <img src="./images/Rastreador Pessoal.jpg" alt="Rastreador Pessoal" class="specialty-image" />
         <h3>Rastreador Pessoal</h3>
@@ -122,43 +131,15 @@
         </div>
       </div>
 
-      <!-- Rastreador de Frota -->
-      <div class="specialty-card">
-        <img src="./images/Rastreador de Frota.jpg" alt="Rastreador de Frota" class="specialty-image" />
-        <h3>Rastreador de Frota</h3>
-        <div class="specialty-description">
-          <ul>
-            <li><strong>Controle total da frota:</strong> Acompanhe todos os veículos em tempo real.</li>
-            <li><strong>Relatórios de desempenho:</strong> Acesse relatórios detalhados sobre o comportamento dos
-              motoristas.</li>
-            <li><strong>Redução de custos:</strong> Otimize as rotas e reduza os custos operacionais.</li>
-            <li><strong>Aumento de segurança:</strong> Melhore a segurança dos veículos com monitoramento contínuo.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Rastreador de Carga -->
-      <div class="specialty-card">
-        <img src="./images/rastreador-carga.jpg" alt="Rastreador de Carga" class="specialty-image" />
-        <h3>Rastreador de Carga</h3>
-        <div class="specialty-description">
-          <ul>
-            <li><strong>Monitoramento em tempo real:</strong> Acompanhe o transporte das mercadorias a qualquer momento.
-            </li>
-            <li><strong>Sistemas de alerta e notificação:</strong> Receba atualizações sobre o trajeto e a integridade
-              das cargas.</li>
-            <li><strong>Segurança adicional:</strong> Proteja produtos valiosos durante o transporte.</li>
-            <li><strong>Redução de riscos:</strong> Minimiza o risco de roubo ou danos às mercadorias.</li>
-          </ul>
-        </div>
-      </div>
+      <!-- Adicionar mais cartões conforme necessário -->
     </div>
   </section>
 
-  <!-- Form -->
+  <!-- Seção de Contato: formulário para os visitantes entrarem em contato -->
   <section id="Contato">
     <h3>Contato</h3>
     <form method="POST" action="#">
+      <!-- Campos do formulário para coletar informações do usuário -->
       <label for="name">Nome Completo</label>
       <input type="text" name="name" id="name" placeholder="Nome Completo" />
 
@@ -180,18 +161,20 @@
       <textarea name="message" id="message" placeholder="Digite sua mensagem" rows="6"></textarea>
 
       <ul class="actions">
+        <!-- Botões de envio e reset do formulário -->
         <li><input type="submit" value="Enviar" class="primary" /></li>
         <li><input type="reset" value="Reset" /></li>
       </ul>
     </form>
   </section>
 
+  <!-- Rodapé: informações sobre direitos autorais -->
   <footer class="footer">
     <p>&copy; <span id="year"></span> Rastremar. Todos os direitos reservados.</p>
   </footer>
 
-
-  <script src="script.js"></script> <!-- Adicione a referência ao seu script.js aqui -->
+  <!-- Referência ao arquivo JavaScript -->
+  <script src="script.js"></script>
 
 </body>
 
