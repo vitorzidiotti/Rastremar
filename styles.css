@@ -658,3 +658,29 @@ ul.actions {
     gap: 10px;
   }
 }
+
+
+/* Estilizando o rodapé */
+.footer {
+  background-color: #333;  /* Cor de fundo escura */
+  color: white;  /* Texto branco */
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
